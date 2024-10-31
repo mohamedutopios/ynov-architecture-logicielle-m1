@@ -35,8 +35,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public OrderDTO saveOrder(OrderDTO orderDTO) {
         // Récupérer le produit à partir de l'ID
-        Product product = productRepository.findById(orderDTO.getProductId())
-                .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
+        Product product = productRepository.findById(orderDTO.getProductId());
         Order order = DTOMapper.convertToEntity(orderDTO, product);
         return DTOMapper.convertToDTO(orderRepository.save(order));
     }
@@ -49,8 +48,7 @@ public class OrderServiceImpl implements OrderService {
         order.setOrderDate(LocalDate.parse(orderDTO.getFormattedOrderDate()));
 
         // Récupérer le produit à partir de l'ID
-        Product product = productRepository.findById(orderDTO.getProductId())
-                .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
+        Product product = productRepository.findById(orderDTO.getProductId());
         order.setProduct(product);
 
         return DTOMapper.convertToDTO(orderRepository.save(order));

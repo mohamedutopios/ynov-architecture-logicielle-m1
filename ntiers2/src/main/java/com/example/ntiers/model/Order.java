@@ -19,7 +19,7 @@ public class Order {
     private String orderNumber;
     private LocalDate orderDate;
 
-    @ManyToOne
+    @OneToOne
     private Product product;
 
 

@@ -10,6 +10,6 @@ public class OrderDTO {
     private Long productId; // Facilitates saving
     private ProductDTO product; // Used for response
 
-    // Getters and Setters
+
 }
 
