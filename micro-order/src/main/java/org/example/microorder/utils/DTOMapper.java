@@ -18,7 +18,6 @@ public class DTOMapper {
         orderDTO.setFormattedOrderDate(order.getOrderDate().toString());
         orderDTO.setProductId(order.getProductId());
 
-        // Si le produit est disponible, l'inclure dans le DTO
         orderDTO.setProduct(productDTO);
         return orderDTO;
     }
