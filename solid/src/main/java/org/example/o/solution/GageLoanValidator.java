@@ -1,10 +1,10 @@
 package org.example.o.solution;
 
-public class GageLoanValidator {
+public class GageLoanValidator implements Validator {
 
-    public boolean isValidUserGage(User user){
+
+    @Override
+    public boolean isValid(User user) {
         return false;
     }
-
-
 }

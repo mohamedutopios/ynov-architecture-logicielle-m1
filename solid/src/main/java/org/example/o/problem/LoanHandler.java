@@ -11,7 +11,6 @@ public class LoanHandler {
         }
     }
 
-
     public void approveGageLoan(User user){
         if(gageLoanValidator.isValidUserGage(user)){
             System.out.println("Loan validated");
