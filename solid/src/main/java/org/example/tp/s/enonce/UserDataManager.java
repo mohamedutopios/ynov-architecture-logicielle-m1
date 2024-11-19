@@ -1,8 +1,8 @@
-package org.example.tp.s;
+package org.example.tp.s.enonce;
 /*
 
-Dans ce fichier, vous trouverez une violation du Principe de Responsabilité Unique (Single Responsibility Principle). 
-Vous devez refactoriser ce fichier. 
+Dans ce fichier, vous trouverez une violation du Principe de Responsabilité Unique (Single Responsibility Principle).
+Vous devez refactoriser ce fichier.
 Vous pouvez supprimer ce fichier complètement, car il ne sera pas utilisé lors de l'évaluation de la solution.
 
 
@@ -72,5 +72,6 @@ public class UserDataManager {
         userManager.loginUser();
     }
 }
+
 
 
