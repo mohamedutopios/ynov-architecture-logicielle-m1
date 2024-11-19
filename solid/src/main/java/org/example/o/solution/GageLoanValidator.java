@@ -1,4 +1,4 @@
-package org.example.o.problem;
+package org.example.o.solution;
 
 public class GageLoanValidator {
 
