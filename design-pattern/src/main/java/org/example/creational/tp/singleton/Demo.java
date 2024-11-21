@@ -1,4 +1,4 @@
-package org.example.creational.tp;
+package org.example.creational.tp.singleton;
 
 public class Demo {
     public static void main(String[] args) {
