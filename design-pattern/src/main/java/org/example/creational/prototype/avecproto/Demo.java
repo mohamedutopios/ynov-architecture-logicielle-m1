@@ -14,7 +14,7 @@ public class Demo {
 
         System.out.println("circle : " + (cloneCircle == circle));
 
-        //System.out.println("circle : " + (cloneCircle.equals(circle)));
+        System.out.println("circle : " + (cloneCircle.equals(circle)));
 
 
         System.out.println();

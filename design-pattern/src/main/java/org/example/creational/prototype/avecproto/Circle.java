@@ -1,5 +1,7 @@
 package org.example.creational.prototype.avecproto;
 
+import java.util.Objects;
+
 public class Circle implements ShapePrototype{
 
     private String color;
@@ -22,4 +24,13 @@ public class Circle implements ShapePrototype{
                 ", radius=" + radius +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return radius == circle.radius && Objects.equals(color, circle.color);
+    }
+
 }
