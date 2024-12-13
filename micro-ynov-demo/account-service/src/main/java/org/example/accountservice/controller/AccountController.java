@@ -26,6 +26,7 @@ public class AccountController {
 
     @PostMapping
     public Account createAccount(@RequestBody Account account) {
+        System.out.println(account.getName());
         return accountService.saveAccount(account);
     }
 
